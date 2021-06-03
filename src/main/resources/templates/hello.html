@@ -1,0 +1,17 @@
+  
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<p>日付計算アプリ</p>
+	<p th:text="${userName}"></p>
+	
+	
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Logout">
+	</form>
+	
+	
+</body>
+</html>
