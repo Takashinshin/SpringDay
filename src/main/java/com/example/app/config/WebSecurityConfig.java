@@ -47,7 +47,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 				.loginProcessingUrl("/sign_in")//指定したURLがリクエストを受けたら、認証の処理が始まる合図
 				.usernameParameter("username")//ログイン画面のユーザ名のパラメータ名
 				.passwordParameter("password")//ログイン画面のパスワードのパラメータ名
-				.successForwardUrl("/hello")//ログイン成功時のアクセスするURL
+				.defaultSuccessUrl("/hello")//ログイン成功時のアクセスするURL
 				.failureUrl("/login?error")//ログインが失敗した時のURL
 				.permitAll()//全てのアクセスを許可
 				

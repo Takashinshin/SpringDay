@@ -4,10 +4,10 @@
 </head>
 <body>
 	<div th:if="${param.logout}">
-		You have been logged out!!
+		ログアウトしました。
 	</div>
 	<div th:if="${param.error}">
-		Invalid username and password.
+		<span style="color:red;">無効なユーザ名もしくはパスワードです。</span> 
 	</div>
 	
 	<!-- /sign_in がログイン判定を呼び出すViewNameになっている-->
